@@ -1,0 +1,392 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6100 3750 1200 1200
+U 62103FC9
+F0 "CANBUS" 60
+F1 "canbus.sch" 60
+F2 "SI" I L 6100 4100 60 
+F3 "SO" O L 6100 4000 60 
+F4 "CS" I L 6100 4200 60 
+F5 "SCK" I L 6100 3900 60 
+F6 "INT" O L 6100 4300 60 
+F7 "GND" O R 7300 3950 60 
+F8 "VCC" I R 7300 3850 60 
+F9 "CAN_H" B R 7300 4050 60 
+F10 "CAN_L" B R 7300 4150 60 
+$EndSheet
+$Sheet
+S 8050 2400 950  400 
+U 621040E4
+F0 "POWER SUPPLY" 50
+F1 "supplies.sch" 50
+F2 "GND" O R 9000 2650 60 
+F3 "+5V_OUT" I L 8050 2650 60 
+F4 "+18V_IN" I R 9000 2550 60 
+F5 "+18V_OUT" I L 8050 2550 60 
+$EndSheet
+$Sheet
+S 9450 2450 1000 500 
+U 62104196
+F0 "CANBUS CONN" 50
+F1 "canbus_connector.sch" 50
+F2 "CAN_H" B L 9450 2750 60 
+F3 "CAN_L" B L 9450 2850 60 
+F4 "CAN_18V" O L 9450 2550 60 
+F5 "CAN_GND" B L 9450 2650 60 
+$EndSheet
+$Comp
+L power:GND #PWR09
+U 1 1 6218FB7C
+P 4400 4500
+F 0 "#PWR09" H 4400 4250 50  0001 C CNN
+F 1 "GND" H 4405 4327 50  0000 C CNN
+F 2 "" H 4400 4500 50  0001 C CNN
+F 3 "" H 4400 4500 50  0001 C CNN
+	1    4400 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4400 4400 4400
+Wire Wire Line
+	4150 4100 4650 4100
+Wire Wire Line
+	4150 4000 4650 4000
+Wire Wire Line
+	4400 4500 4400 4400
+Connection ~ 4400 4400
+Wire Wire Line
+	4400 4400 4650 4400
+$Comp
+L power:+5V #PWR011
+U 1 1 62192AF8
+P 7300 3450
+F 0 "#PWR011" H 7300 3300 50  0001 C CNN
+F 1 "+5V" H 7315 3623 50  0000 C CNN
+F 2 "" H 7300 3450 50  0001 C CNN
+F 3 "" H 7300 3450 50  0001 C CNN
+	1    7300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 62195C96
+P 7600 4300
+F 0 "#PWR037" H 7600 4050 50  0001 C CNN
+F 1 "GND" H 7605 4127 50  0000 C CNN
+F 2 "" H 7600 4300 50  0001 C CNN
+F 3 "" H 7600 4300 50  0001 C CNN
+	1    7600 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 3950 7600 3950
+Wire Wire Line
+	7600 3950 7600 4300
+Wire Wire Line
+	7300 3450 7300 3600
+Wire Wire Line
+	7300 3600 7550 3600
+Wire Wire Line
+	7550 3600 7550 3850
+Wire Wire Line
+	7550 3850 7300 3850
+$Comp
+L power:GND #PWR010
+U 1 1 62196F1C
+P 6250 2950
+F 0 "#PWR010" H 6250 2700 50  0001 C CNN
+F 1 "GND" H 6255 2777 50  0000 C CNN
+F 2 "" H 6250 2950 50  0001 C CNN
+F 3 "" H 6250 2950 50  0001 C CNN
+	1    6250 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2750 6250 2750
+Wire Wire Line
+	6250 2750 6250 2950
+Connection ~ 7600 3950
+Wire Wire Line
+	9450 2850 9350 2850
+Wire Wire Line
+	9000 2550 9450 2550
+Wire Wire Line
+	9250 2750 9250 4050
+Wire Wire Line
+	9250 2750 9450 2750
+Wire Wire Line
+	7300 4050 9250 4050
+Wire Wire Line
+	9350 2850 9350 4150
+Wire Wire Line
+	7300 4150 9350 4150
+Wire Wire Line
+	9000 2650 9150 2650
+Wire Wire Line
+	9150 3950 9150 2650
+Wire Wire Line
+	7600 3950 9150 3950
+Connection ~ 9150 2650
+Wire Wire Line
+	9150 2650 9450 2650
+Wire Wire Line
+	7550 3600 7600 3600
+Wire Wire Line
+	7600 3600 7600 2650
+Wire Wire Line
+	7600 2650 8050 2650
+Connection ~ 7550 3600
+Wire Wire Line
+	5700 3900 6100 3900
+Wire Wire Line
+	5700 4000 6100 4000
+Wire Wire Line
+	5700 4100 6100 4100
+Wire Wire Line
+	5700 4200 6100 4200
+Wire Wire Line
+	5700 4300 6100 4300
+Text Label 5800 3900 0    50   ~ 0
+SCK
+Text Label 5800 4000 0    50   ~ 0
+MISO
+Text Label 5800 4100 0    50   ~ 0
+MOSI
+Wire Wire Line
+	6000 2550 8050 2550
+Wire Wire Line
+	4550 2650 4450 2650
+Wire Wire Line
+	4550 2550 4350 2550
+$Comp
+L Connector_Generic:Conn_01x04 J4
+U 1 1 62238B92
+P 1600 2650
+F 0 "J4" H 1680 2642 50  0000 L CNN
+F 1 "Conn_01x04" H 1680 2551 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" H 1600 2650 50  0001 C CNN
+F 3 "~" H 1600 2650 50  0001 C CNN
+	1    1600 2650
+	-1   0    0    -1  
+$EndComp
+Text Label 1950 2650 0    60   ~ 0
++15V1
+Text Label 1950 2550 0    60   ~ 0
+-15V1
+Text Label 1950 2850 0    50   ~ 0
+GND
+Text Label 1950 3500 0    60   ~ 0
++15V
+Text Label 1950 3400 0    60   ~ 0
+-15V
+Text Label 1950 3700 0    50   ~ 0
+GND
+$Comp
+L Connector_Generic:Conn_01x04 J5
+U 1 1 622445C9
+P 1600 3500
+F 0 "J5" H 1680 3492 50  0000 L CNN
+F 1 "Conn_01x04" H 1680 3401 50  0000 L CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_4-G-5,08_1x04_P5.08mm_Horizontal" H 1600 3500 50  0001 C CNN
+F 3 "~" H 1600 3500 50  0001 C CNN
+	1    1600 3500
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3600 2100 4200
+Wire Wire Line
+	2100 4200 3200 4200
+Wire Wire Line
+	1800 3600 2100 3600
+Wire Wire Line
+	2250 2750 2250 4000
+Wire Wire Line
+	2250 4000 3200 4000
+Wire Wire Line
+	1800 2750 2250 2750
+$Sheet
+S 4550 2450 1450 550 
+U 6216F243
+F0 "Buck e BuckBoost" 50
+F1 "Bipolar15V.sch" 50
+F2 "Vout+" O L 4550 2550 60 
+F3 "Vout-" O L 4550 2650 60 
+F4 "+18V_IN" I R 6000 2550 60 
+F5 "GND" I R 6000 2750 60 
+$EndSheet
+$Comp
+L power:GND #PWR0101
+U 1 1 621C578C
+P 2000 4300
+F 0 "#PWR0101" H 2000 4050 50  0001 C CNN
+F 1 "GND" H 2005 4127 50  0000 C CNN
+F 2 "" H 2000 4300 50  0001 C CNN
+F 3 "" H 2000 4300 50  0001 C CNN
+	1    2000 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 4300 2000 3700
+Wire Wire Line
+	1800 3700 2000 3700
+$Comp
+L power:GND #PWR0102
+U 1 1 621C7D53
+P 2000 3050
+F 0 "#PWR0102" H 2000 2800 50  0001 C CNN
+F 1 "GND" H 2005 2877 50  0000 C CNN
+F 2 "" H 2000 3050 50  0001 C CNN
+F 3 "" H 2000 3050 50  0001 C CNN
+	1    2000 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 2850 2000 3050
+Wire Wire Line
+	1800 2850 2000 2850
+Wire Wire Line
+	2000 3700 2200 3700
+Wire Wire Line
+	2200 3700 2200 4100
+Wire Wire Line
+	2200 4100 3200 4100
+Connection ~ 2000 3700
+Wire Wire Line
+	2000 2850 2350 2850
+Wire Wire Line
+	2350 2850 2350 3900
+Wire Wire Line
+	2350 3900 3200 3900
+Connection ~ 2000 2850
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 62181137
+P 4650 5850
+AR Path="/6216F243/62181137" Ref="H?"  Part="1" 
+AR Path="/62181137" Ref="H6"  Part="1" 
+F 0 "H6" H 4750 5896 50  0000 L CNN
+F 1 "Mount_TR" H 4750 5805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4650 5850 50  0001 C CNN
+F 3 "~" H 4650 5850 50  0001 C CNN
+	1    4650 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6218275B
+P 4650 6100
+AR Path="/6216F243/6218275B" Ref="H?"  Part="1" 
+AR Path="/6218275B" Ref="H7"  Part="1" 
+F 0 "H7" H 4750 6146 50  0000 L CNN
+F 1 "Mount_BL" H 4750 6055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4650 6100 50  0001 C CNN
+F 3 "~" H 4650 6100 50  0001 C CNN
+	1    4650 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 62183DBB
+P 4650 6350
+AR Path="/6216F243/62183DBB" Ref="H?"  Part="1" 
+AR Path="/62183DBB" Ref="H8"  Part="1" 
+F 0 "H8" H 4750 6396 50  0000 L CNN
+F 1 "Mount_BR" H 4750 6305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4650 6350 50  0001 C CNN
+F 3 "~" H 4650 6350 50  0001 C CNN
+	1    4650 6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 6217FA4A
+P 4650 5600
+AR Path="/6216F243/6217FA4A" Ref="H?"  Part="1" 
+AR Path="/6217FA4A" Ref="H5"  Part="1" 
+F 0 "H5" H 4750 5646 50  0000 L CNN
+F 1 "Mount_TL" H 4750 5555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 4650 5600 50  0001 C CNN
+F 3 "~" H 4650 5600 50  0001 C CNN
+	1    4650 5600
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 3200 3700 950  850 
+U 62102577
+F0 "Bipolar Analog" 50
+F1 "analog_bipolar.sch" 50
+F2 "out1" I R 4150 4000 60 
+F3 "GND" I R 4150 4400 60 
+F4 "in1-" I L 3200 3900 60 
+F5 "in1+" I L 3200 4000 60 
+F6 "out2" I R 4150 4100 60 
+F7 "in2-" I L 3200 4100 60 
+F8 "in2+" I L 3200 4200 60 
+F9 "+15V" I R 4150 3800 60 
+F10 "-15V" I R 4150 3900 60 
+$EndSheet
+$Sheet
+S 4650 3650 1050 900 
+U 62103E31
+F0 "MCU" 60
+F1 "atmega328p.sch" 60
+F2 "SPI_SCK" O R 5700 3900 60 
+F3 "SPI_MISO" I R 5700 4000 60 
+F4 "SPI_MOSI" O R 5700 4100 60 
+F5 "MCP_SS" O R 5700 4200 60 
+F6 "MCP_INT" I R 5700 4300 60 
+F7 "GND" O L 4650 4400 60 
+F8 "analog1" I L 4650 4000 60 
+F9 "analog2" I L 4650 4100 60 
+$EndSheet
+Wire Wire Line
+	4350 3800 4150 3800
+Wire Wire Line
+	4450 3900 4150 3900
+Wire Wire Line
+	2400 2650 2400 2550
+Wire Wire Line
+	2400 2550 1800 2550
+Wire Wire Line
+	2400 2650 4450 2650
+Connection ~ 4450 2650
+Wire Wire Line
+	1800 2650 2150 2650
+Wire Wire Line
+	2150 2650 2150 2450
+Wire Wire Line
+	2150 2450 2500 2450
+Wire Wire Line
+	2500 2450 2500 2550
+Wire Wire Line
+	2500 2550 4350 2550
+Connection ~ 4350 2550
+Wire Wire Line
+	4450 2650 4450 3400
+Wire Wire Line
+	4350 2550 4350 3500
+Wire Wire Line
+	1800 3500 4350 3500
+Connection ~ 4350 3500
+Wire Wire Line
+	4350 3500 4350 3800
+Wire Wire Line
+	1800 3400 4450 3400
+Connection ~ 4450 3400
+Wire Wire Line
+	4450 3400 4450 3900
+$EndSCHEMATC
