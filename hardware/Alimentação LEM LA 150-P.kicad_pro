@@ -388,7 +388,7 @@
     "page_layout_descr_file": ""
   },
   "schematic": {
-    "annotate_start_num": 0,
+    "annotate_start_num": 100,
     "drawing": {
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
@@ -435,16 +435,16 @@
       "Bipolar Analog"
     ],
     [
-      "00000000-0000-0000-0000-000062103e31",
-      "MCU"
-    ],
-    [
-      "00000000-0000-0000-0000-000062103fc9",
-      "CANBUS"
+      "e5c894db-6aa1-4261-bbe6-36a04f6a50aa",
+      "STM32"
     ],
     [
       "00000000-0000-0000-0000-0000621040e4",
       "POWER SUPPLY"
+    ],
+    [
+      "ddf05078-8917-4f23-81a6-ce1b6ac52ab3",
+      "CANBUS"
     ],
     [
       "00000000-0000-0000-0000-000062104196",
