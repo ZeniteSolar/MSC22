@@ -1057,7 +1057,7 @@
     (uuid fac936fa-2d97-4d6c-8c0a-7f09e6f80364)
     (property "Reference" "U106" (id 0) (at 196.85 62.4332 0))
     (property "Value" "AMS1117-3.3" (id 1) (at 196.85 64.7446 0))
-    (property "Footprint" "" (id 2) (at 196.85 63.5 0)
+    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (id 2) (at 196.85 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 199.39 74.93 0)
