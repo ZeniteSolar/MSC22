@@ -11000,11 +11000,11 @@
     (property "exclude_from_bom" "")
     (path "/76b36edb-8986-48d4-832f-1ae513cc4d71")
     (attr through_hole exclude_from_bom)
-    (fp_text reference "SYM103" (at 0 0) (layer "F.SilkS") hide
+    (fp_text reference "SYM103" (at 0 0) (layer "Eco2.User") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
       (tstamp 325c83a2-6065-41e0-9b76-6b3cd65b2129)
     )
-    (fp_text value "SYM_Radioactive_Radiation_Small" (at 0.75 0) (layer "F.SilkS") hide
+    (fp_text value "SYM_Radioactive_Radiation_Small" (at 0.75 0) (layer "Eco2.User") hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
       (tstamp 59c7b1c8-4f14-4e85-b5ff-d3d5403765d2)
     )
