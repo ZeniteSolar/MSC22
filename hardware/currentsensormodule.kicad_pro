@@ -126,7 +126,11 @@
         "min_silk_clearance": 0.0,
         "min_through_hole_diameter": 0.19999999999999998,
         "min_track_width": 0.254,
+<<<<<<< HEAD
         "min_via_annular_width": 0.19999999999999998,
+=======
+        "min_via_annular_width": 0.25,
+>>>>>>> 71f7fae (hardware: Silkscreen ajusted, RDC errors fixed)
         "min_via_diameter": 0.39999999999999997,
         "use_height_for_length_calcs": true
       },

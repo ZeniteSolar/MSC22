@@ -1,7 +1,12 @@
 {
   "board": {
+<<<<<<< HEAD
     "active_layer": 37,
     "active_layer_preset": "",
+=======
+    "active_layer": 31,
+    "active_layer_preset": "B.SILK",
+>>>>>>> 71f7fae (hardware: Silkscreen ajusted, RDC errors fixed)
     "auto_track_width": true,
     "hidden_nets": [],
     "high_contrast_mode": 0,
@@ -33,6 +38,7 @@
       3,
       4,
       5,
+      7,
       8,
       9,
       10,
@@ -40,7 +46,6 @@
       12,
       13,
       14,
-      15,
       16,
       17,
       18,
@@ -60,9 +65,10 @@
       33,
       34,
       35,
-      36
+      36,
+      37
     ],
-    "visible_layers": "002d7f3_80000001",
+    "visible_layers": "ffff7df_7ffffffe",
     "zone_display_mode": 0
   },
   "meta": {
